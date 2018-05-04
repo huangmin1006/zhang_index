@@ -1,0 +1,17 @@
+%before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin fontToEmpty($height) {
+    font-size: $height;
+    height: $height;
+    line-height: $height;
+}
