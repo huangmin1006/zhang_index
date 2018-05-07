@@ -1,6 +1,6 @@
 <template>
     <div id="index" @mousemove="bgPlaceChange($event)" :style="style">
-        <Header></Header>
+        <Header isIndex="index"></Header>
         <Center></Center>
         <Footer></Footer>
         <div class="center-bg" :style="moveBg"></div>
