@@ -75,16 +75,16 @@ a {
     padding: 0 0.2rem;
     &:hover {
         &::before {
-            background: #fff;
+            width: 100%;
         }
     }
 }
 
 .hoverA::before {
     @extend %before;
-    width: 100%;
+    width: 0;
     height: 30%;
-    background: transparent;
+    background: #fff;
     top: 70%;
     opacity: 0.3;
     transition: all 100ms linear;

@@ -1,6 +1,6 @@
 <template>
     <div id="menu">
-        <Header languge="en"></Header>
+        <Header languge="en" isMenu="menu"></Header>
         <Center languge="en"></Center>
         <Footer languge="en"></Footer>
     </div>
@@ -15,7 +15,8 @@ import Footer from './footer';
 
 
 let data = {
-    isActive: true
+    isActive: true,
+    menu: true
 };
 export default {
     data() {
@@ -33,7 +34,7 @@ export default {
 #menu{
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,.8);
+    background: #2c2c2c;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

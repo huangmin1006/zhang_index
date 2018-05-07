@@ -48,7 +48,7 @@ export default {
 @import "../../assets/resetNew.css";
 // 编写
 #index {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #2c2c2c;
     height: 100vh;
     color: #fff;
     display: flex;
