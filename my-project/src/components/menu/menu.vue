@@ -1,6 +1,6 @@
 <template>
     <div id="menu">
-        <Header languge="en" :imgState="isActive"></Header>
+        <Header languge="en" isMenu="menu"></Header>
         <Center languge="en"></Center>
         <Footer languge="en"></Footer>
     </div>
@@ -15,7 +15,8 @@ import Footer from './footer';
 
 
 let data = {
-    isActive: true
+    isActive: true,
+    menu: true
 };
 export default {
     data() {
@@ -31,9 +32,9 @@ export default {
 
 <style lang="scss" scoped>
 #menu{
-    // width: 100vw;
-    height: 100%;
-    background: rgba(0,0,0,.8);
+    width: 100vw;
+    height: 100vh;
+    background: #2c2c2c;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

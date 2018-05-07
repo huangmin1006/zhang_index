@@ -1,6 +1,6 @@
 <template>
     <div id="index" @mousemove="bgPlaceChange($event)" :style="style">
-        <Header :imgState="isActive"></Header>
+        <Header></Header>
         <Center></Center>
         <Footer></Footer>
         <div class="center-bg" :style="moveBg"></div>
@@ -20,7 +20,6 @@ let data = {
     sizeX: "",
     sizeY: "",
     moveBg: "",
-    isActive: false,
     style: { minHeight: window.innerHeight + "px" }
 };
 
@@ -49,10 +48,8 @@ export default {
 @import "../../assets/resetNew.css";
 // 编写
 #index {
-    font-family: "Microsoft YaHei", sans-serif;
-    background-color: rgba(0, 0, 0, 0.8);
-    // height: 100vh;
-    height: 100%;
+    background-color: #2c2c2c;
+    height: 100vh;
     color: #fff;
     display: flex;
     flex-direction: column;
