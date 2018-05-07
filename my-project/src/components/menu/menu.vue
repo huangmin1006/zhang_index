@@ -1,6 +1,6 @@
 <template>
     <div id="menu">
-        <Header languge="en" :imgState="isActive"></Header>
+        <Header languge="en"></Header>
         <Center languge="en"></Center>
         <Footer languge="en"></Footer>
     </div>
@@ -31,8 +31,8 @@ export default {
 
 <style lang="scss" scoped>
 #menu{
-    // width: 100vw;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: rgba(0,0,0,.8);
     display: flex;
     flex-direction: column;

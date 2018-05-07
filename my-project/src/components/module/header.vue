@@ -7,18 +7,13 @@
             <span class="small-font">EN</span>
         </div>
 
-        <transition name="change">
-            <div v-if="this.menuBtn" class="menu active" @click="toStateUrl">
+        <!-- <transition name="change">
+            <div class="menu" @click="toStateUrl">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
             </div>
-            <div v-else class="menu" @click="toStateUrl">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </div>
-        </transition>
+        </transition> -->
 
     </div>
 
@@ -54,9 +49,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../common/_common.scss";
 
-.small-font {
-    @include fontToEmpty(1rem);
-}
+
 .index-header {
     width: 100%;
     padding: 32px 50px;
@@ -67,6 +60,12 @@ export default {
         flex: 1;
     }
 }
+
+.small-font {
+    @include fontToEmpty(1rem);
+    cursor: pointer;
+}
+
 .btn-func {
     float: right;
     span {
@@ -76,6 +75,7 @@ export default {
     }
 }
 
+// 菜单icon
 .menu {
     cursor: pointer;
     float: right;
@@ -88,23 +88,17 @@ export default {
         margin: 3px 0;
     }
 }
-// vue动画组件使用
-.change-enter-active,
-.change-leave-active {
-    transition: all 1s;
-    background: red;
-}
 
 // 菜单动效
-.active .line:nth-child(2) {
-    opacity: 0;
-}
+// .active .line:nth-child(2) {
+//     opacity: 0;
+// }
 
-.active .line:nth-child(1) {
-    transform: translateY(6px) rotate(45deg);
-}
+// .active .line:nth-child(1) {
+//     transform: translateY(6px) rotate(45deg);
+// }
 
-.active .line:nth-child(3) {
-    transform: translateY(-6px) rotate(-45deg);
-}
+// .active .line:nth-child(3) {
+//     transform: translateY(-6px) rotate(-45deg);
+// }
 </style>
