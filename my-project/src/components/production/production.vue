@@ -41,7 +41,6 @@
 
 <script>
     import Header from "../module/header";
-    import Tag from "../module/tag";
     import Footer from "../module/footer";
     import pageCount from "../module/pageCount";
     let data = {
