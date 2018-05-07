@@ -9,16 +9,17 @@
 
 <script>
     let data = {
-        tag: "portfolio"
+        tag: ""
     };
     export default {
         data() {
             return data;
         },
+        props: ["tagName"],
         created() {
-            this.tag = this.tag.toUpperCase();
+            this.tag = this.tagName.toUpperCase();
         }
-    }
+    };
 
 </script>
 

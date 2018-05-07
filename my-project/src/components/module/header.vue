@@ -8,7 +8,7 @@
                 </div>
                 <div v-else>
                     <span>TOBY SCOTT</span>
-                    <Tag></Tag>
+                    <Tag :tagName="this.name"></Tag>
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
         created() {
             this.menuBtn = this.imgState;
         },
-        props: ["languge", "imgState", "isProduction", "isMenu", "isIndex"],
+        props: ["languge", "imgState", "isMenu", "isIndex", "name"],
         methods: {
             // toStateUrl() {
             //     this.menuBtn = !this.menuBtn;
