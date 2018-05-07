@@ -44,8 +44,6 @@
         },
         created() {
             this.menuBtn = this.imgState;
-
-            console.log(this.isMenu, this.isProduction)
         },
         props: ["languge", "imgState", "isProduction", "isMenu", "isIndex"],
         methods: {
