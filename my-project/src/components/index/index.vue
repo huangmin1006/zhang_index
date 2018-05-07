@@ -4,11 +4,7 @@
         <Center></Center>
         <Footer></Footer>
         <div class="center-bg" :style="moveBg"></div>
-        <div class="page-count">
-            <span>01</span>
-            <span class="line"></span>
-            <span>04</span>
-        </div>
+        <page-count></page-count>  
     </div>
 </template>
 
@@ -16,6 +12,9 @@
 import Footer from "../module/footer";
 import Center from "./center";
 import Header from "../module/header";
+import pageCount from "../module/pageCount";
+
+
 let data = {
     sizeX: "",
     sizeY: "",
@@ -39,7 +38,8 @@ export default {
     components: {
         Footer,
         Center,
-        Header
+        Header,
+        pageCount
     }
 };
 </script>
