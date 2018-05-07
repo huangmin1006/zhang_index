@@ -2,9 +2,14 @@
     <div class="index-header">
         <div>
             <span class="isMenu" v-if="isMenu">MENU</span>
-            <div v-else-if="isProduction">
-                <span>TOBY SCOTT</span>
-                <Tag></Tag>
+            <div v-else>
+                <div v-if="isIndex">
+                    <span>TOBY SCOTT</span>
+                </div>
+                <div v-else>
+                    <span>TOBY SCOTT</span>
+                    <Tag></Tag>
+                </div>
             </div>
         </div>
 
@@ -40,9 +45,9 @@
         created() {
             this.menuBtn = this.imgState;
 
-            console.log(this.isMenu,this.isProduction)
+            console.log(this.isMenu, this.isProduction)
         },
-        props: ["languge", "imgState", "isProduction", "isMenu"],
+        props: ["languge", "imgState", "isProduction", "isMenu", "isIndex"],
         methods: {
             // toStateUrl() {
             //     this.menuBtn = !this.menuBtn;
@@ -78,9 +83,9 @@
         }
     }
 
-    .isMenu{
+    .isMenu {
         @include fontToEmpty(5rem);
-        color: rgba(255,255,255,.3);
+        color: rgba(255, 255, 255, .3);
     }
 
     .small-font {
@@ -95,9 +100,7 @@
             font-weight: normal;
             float: left;
         }
-    }
-
-    // 菜单icon
+    } // 菜单icon
     .menu {
         cursor: pointer;
         float: right;
@@ -109,9 +112,7 @@
             background: #fff;
             margin: 3px 0;
         }
-    }
-
-    // 菜单动效
+    } // 菜单动效
     // .active .line:nth-child(2) {
     //     opacity: 0;
     // }
