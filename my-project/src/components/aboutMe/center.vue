@@ -43,6 +43,24 @@
                 <span class="name">C</span>
                 <span v-show="companyClass">Company</span>
             </div>
+
+            <div class="company-content" v-show="companyClass">
+                <!-- 虚线 -->
+                <span></span>
+
+                <div class="company">
+                    <!-- 实线 -->
+                    <span></span>
+
+                    <!-- 内容列表 -->
+                    <div v-for="(v, k) in companyAll" :key="k" class="item">
+                        <span class="time">{{ v.time }}</span>
+                        <img class="img" :src="v.imgSrc" alt="">
+                        <span class="company-name"> {{v.name}} </span>
+                    </div>
+                </div>
+
+            </div>
         </div>
         <div :class="[abilityClass, other]" class="bg3" @click="openAbility">
             <div class="title">
@@ -65,10 +83,26 @@
         data() {
             return {
                 other: "other",
-                resumeClass: "resumeClass", // 点击R显示个人信息(默认)
-                companyClass: "", // 点击C显示个人信息
+                resumeClass: "", // 点击R显示个人信息(默认)
+                companyClass: "companyClass", // 点击C显示个人信息
                 abilityClass: "", // 点击A显示信息
                 skillClass: "", // 点击S显示技能信息
+                companyAll: [{
+                        time: "2014.10",
+                        imgSrc: "",
+                        name: "Chengdu Guodou Digtal Entertainment Co.,Ltd"
+                    },
+                    {
+                        time: "2015.06",
+                        imgSrc: "",
+                        name: "Chengdu Yunbao Technology Co.,Ltd"
+                    },
+                    {
+                        time: "2015.11",
+                        imgSrc: "",
+                        name: "Shanghai Hewei Software Technology Co.,Ltd"
+                    }
+                ]
             };
         },
         methods: {
@@ -125,8 +159,7 @@
     .remark {
         @include fontToEmpty(1rem);
         color: #fff;
-        opacity: .5;
-        // white-space: nowrap;
+        opacity: .5; // white-space: nowrap;
         margin-right: 20px;
     }
 
@@ -195,6 +228,68 @@
     } // 就职公司
     .companyClass {
         @extend %selCommon;
+    }
+
+    .company-content {
+        flex: 1;
+        position: relative;
+        padding: 2% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        >span {
+            width: 1px;
+            height: 100%;
+            background-image: linear-gradient(to bottom, #ccc 2%, #ccc 50%, transparent 50%);
+            background-size: 1px 8px;
+            background-repeat: repeat-y;
+            position: absolute;
+            top: 2%;
+            left: 5.2rem;
+        }
+        .company {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            >span {
+                width: 1px;
+                height: 60%;
+                position: absolute;
+                top: 20%;
+                left: 5.2rem;
+                background: #fff;
+            }
+        }
+
+        .item {
+            display: flex;
+            img {
+                display: inline-block;
+                width: 4rem;
+                height: 2rem;
+                padding-left: 1.5rem;
+                position: relative;
+            }
+            img::before {
+                position: absolute;
+                left: 0;
+                top: 5px;
+                display: block;
+                content: '';
+                border-radius: 50%;
+                background: #191919;
+                width: 1rem;
+                height: 1rem;
+                border: 2px solid #fff;
+                z-index: 99;
+            }
+            .time {
+                padding-right: 1rem;
+            }
+            .company-name {
+                color: #fff;
+            }
+        }
     } // 个人能力
     .abilityClass {
         @extend %selCommon;
