@@ -55,7 +55,9 @@
                     <!-- 内容列表 -->
                     <div v-for="(v, k) in companyAll" :key="k" class="item">
                         <span class="time">{{ v.time }}</span>
-                        <img class="img" :src="v.imgSrc" alt="">
+                        <div class="img-div">
+                            <img class="img" :src="v.imgSrc" alt="">
+                        </div>
                         <span class="company-name"> {{v.name}} </span>
                     </div>
                 </div>
@@ -87,19 +89,20 @@
                 companyClass: "companyClass", // 点击C显示个人信息
                 abilityClass: "", // 点击A显示信息
                 skillClass: "", // 点击S显示技能信息
-                companyAll: [{
+                companyAll: [
+                    {
                         time: "2014.10",
-                        imgSrc: "",
+                        imgSrc: require('../../assets/guodou.png'),
                         name: "Chengdu Guodou Digtal Entertainment Co.,Ltd"
                     },
                     {
                         time: "2015.06",
-                        imgSrc: "",
+                        imgSrc: require('../../assets/yiyunbao.png'),
                         name: "Chengdu Yunbao Technology Co.,Ltd"
                     },
                     {
                         time: "2015.11",
-                        imgSrc: "",
+                        imgSrc: require('../../assets/hewei.png'),
                         name: "Shanghai Hewei Software Technology Co.,Ltd"
                     }
                 ]
@@ -153,13 +156,12 @@
         color: #474747;
         font-weight: 700;
         text-align: center;
-
     }
 
     .remark {
         @include fontToEmpty(1rem);
         color: #fff;
-        opacity: .5; // white-space: nowrap;
+        opacity: 0.5; // white-space: nowrap;
         margin-right: 20px;
     }
 
@@ -239,13 +241,16 @@
         justify-content: space-around;
         >span {
             width: 1px;
-            height: 100%;
-            background-image: linear-gradient(to bottom, #ccc 2%, #ccc 50%, transparent 50%);
+            height: 96%;
+            background-image: linear-gradient( to bottom,
+            #ccc 2%,
+            #ccc 50%,
+            transparent 50%);
             background-size: 1px 8px;
             background-repeat: repeat-y;
             position: absolute;
             top: 2%;
-            left: 5.2rem;
+            left: 4.7rem;
         }
         .company {
             display: flex;
@@ -256,26 +261,28 @@
                 height: 60%;
                 position: absolute;
                 top: 20%;
-                left: 5.2rem;
+                left: 4.7rem;
                 background: #fff;
             }
         }
 
         .item {
             display: flex;
-            img {
+            margin: 1% 0;
+            .img-div {
                 display: inline-block;
-                width: 4rem;
-                height: 2rem;
-                padding-left: 1.5rem;
-                position: relative;
+                width: 5rem;
             }
-            img::before {
+            span:first-child {
+                position: relative;
+                padding-right: 1.5rem;
+            }
+            span:first-child::after {
                 position: absolute;
-                left: 0;
-                top: 5px;
+                right: 0;
+                top: 4px;
                 display: block;
-                content: '';
+                content: "";
                 border-radius: 50%;
                 background: #191919;
                 width: 1rem;
