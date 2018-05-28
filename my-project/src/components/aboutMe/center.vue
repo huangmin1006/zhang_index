@@ -11,7 +11,7 @@
                 <div class="user-name">
                     <span>Name</span>
                     <div>
-                        <span>张文圣</span>
+                        <span>张文圣aa</span>
                         <span class="remark"> (Chinese name)</span>
                     </div>
                     <div>
