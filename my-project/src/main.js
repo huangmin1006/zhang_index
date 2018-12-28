@@ -3,6 +3,7 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
+import V_Echarts from 'vue-echarts-directive';
 import VueI18n from 'vue-i18n';
 // import $ from 'jquery'
 
@@ -21,6 +22,9 @@ const i18n = new VueI18n({
 /* eslint-disable no-new */
 new Vue({
     el: '#app',
+    directives: {
+        'echarts': V_Echarts
+    },
     router,
     i18n,
     components: {
@@ -28,4 +32,3 @@ new Vue({
     },
     template: '<App/>'
 });
-

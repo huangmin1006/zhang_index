@@ -15,7 +15,7 @@ Vue.use(Router);
 
 export default new Router({
     routes: [{
-        path: '/index',
+        path: '/',
         name: 'Indev',
         component: Indev
     }, {
@@ -37,7 +37,10 @@ export default new Router({
     }, {
         path: '/aboutMe',
         name: 'AboutMe',
-        component: AboutMe
+        component: AboutMe,
+        // children: [{
+            
+        // }]
     }, {
         path: '/menu',
         name: 'Menu',

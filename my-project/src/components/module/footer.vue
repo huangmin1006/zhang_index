@@ -28,7 +28,7 @@ export default {
 <style lang="scss" scoped>
 // 引用公共样式
 @import '../../assets/resetNew.css';
-@import '../../common/common';
+@import '../../assets/common';
 
 a {
     color: #fff;
@@ -93,6 +93,12 @@ a {
 .footer-right {
     a {
         display: block;
+    }
+}
+
+.footer-left{
+    >div{
+        padding: 5px 0;
     }
 }
 </style>

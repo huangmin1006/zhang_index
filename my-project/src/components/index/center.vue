@@ -12,28 +12,36 @@
 
 
 <style lang="scss" scoped>
-.index-center {
-    display: flex;
-    align-items: center;
-    padding-left: 100px;
-}
+    .index-center {
+        position: absolute;
+        top: 33.1%;
+        left: 9%;
+        display: flex;
+        align-items: center;
 
-.title-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .title-bottom_options {
-        margin-top: 20px;
-        border-top: 2px solid #fff;
-        padding-top: 10px;
+        p {
+            margin: 0;
+        }
     }
-}
 
-.big-font1 {
-    font-size: 6rem;
-}
+    .title-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-.big-font2 {
-    font-size: 4rem;
-}
+        .title-bottom_options {
+            margin-top: 20px;
+            border-top: 2px solid #fff;
+            padding-top: 10px;
+        }
+    }
+
+    .big-font1 {
+        font-size: 6rem;
+    }
+
+    .big-font2 {
+        font-size: 4rem;
+    }
+
 </style>

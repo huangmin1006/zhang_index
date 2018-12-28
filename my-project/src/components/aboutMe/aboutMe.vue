@@ -1,18 +1,22 @@
 <template>
     <div id="aboutMe">
-        <Header name="about me"></Header>
+        <Header></Header>
+        <name-header></name-header>
         <Center></Center>
         <page-count page="03"></page-count>
         <Footer></Footer>
+        <Mouse></Mouse>
     </div>
 </template>
 
 
 <script>
-    import Header from "../module/header";
-    import Center from "./center";
-    import Footer from "../module/footer";
-    import pageCount from "../module/pageCount";
+    import Header from '../module/header.vue';
+    import nameHeader from '../module/nameHeader.vue';
+    import Center from './center';
+    import Footer from '../module/footer';
+    import Mouse from '../module/mouse';
+    import pageCount from '../module/pageCount';
 
 
     let data = {};
@@ -24,7 +28,9 @@
             Header,
             Center,
             Footer,
-            pageCount
+            pageCount,
+            nameHeader,
+            Mouse
         }
 
     };
@@ -34,9 +40,8 @@
 
 <style lang="scss" scoped>
     #aboutMe {
-        height: 100vh;
-        width: 100vw;
-        background-color: #2c2c2c;
+        height: 100%;
+        background-color: #232323;
         position: relative;
         color: #fff;
         display: flex;

@@ -40,13 +40,13 @@
 
 
 <script>
-    import Header from "../module/header";
-    import Footer from "../module/footer";
-    import pageCount from "../module/pageCount";
+    import Header from '../module/header';
+    import Footer from '../module/footer';
+    import pageCount from '../module/pageCount';
     let data = {
         production: true,
         nowDate: Date(),
-        size: ""
+        size: ''
     };
     export default {
         data() {
@@ -63,8 +63,8 @@
             item.focus();
             // 内容运动时，进度条进度展示
             item.onscroll = () => {
-                this.size = parseInt(parseInt(item.scrollWidth) / 2624 * parseInt(item.scrollLeft)) + "px";
-            }
+                this.size = parseInt(parseInt(item.scrollWidth) / 2624 * parseInt(item.scrollLeft)) + 'px';
+            };
         },
         components: {
             Header,

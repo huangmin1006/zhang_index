@@ -8,7 +8,6 @@
                 </div>
                 <div v-else>
                     <span>TOBY SCOTT</span>
-                    <Tag :tagName="this.name"></Tag>
                 </div>
             </div>
         </div>
@@ -32,9 +31,6 @@
 </template>
 
 <script>
-    import Tag from "../module/tag";
-
-
     let data = {
         menuBtn: false,
     };
@@ -45,7 +41,7 @@
         created() {
             this.menuBtn = this.imgState;
         },
-        props: ["languge", "imgState", "isMenu", "isIndex", "name"],
+        props: ['languge', 'imgState', 'isMenu', 'isIndex', 'name'],
         methods: {
             // toStateUrl() {
             //     this.menuBtn = !this.menuBtn;
@@ -56,21 +52,17 @@
             //     }
             // }
         },
-        components: {
-            Tag
-        }
     };
 
 </script>
 
 
 <style lang="scss" scoped>
-    @import "../../common/_common.scss";
+    @import "../../assets/common";
 
 
     .index-header {
-        width: 100%;
-        padding: 32px 50px;
+        padding: 32px 50px 22px;
         font-size: 1.2rem;
         color: #fff;
         font-weight: 600;

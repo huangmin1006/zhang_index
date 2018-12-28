@@ -16,27 +16,27 @@
 let data = {
     imgDiv: [
         {
-            imgSrc: "./static/img/ball.png",
-            text: "DRIBBBLE",
-            url: "https://dribbble.com/toby_scott"
+            imgSrc: './static/ball.png',
+            text: 'DRIBBBLE',
+            url: 'https://dribbble.com/toby_scott'
         },
         {
-            imgSrc: "./static/img/behance.png",
-            text: "BEHANCE",
-            url: "https://behance.net/toby_scott"
+            imgSrc: './static/behance.png',
+            text: 'BEHANCE',
+            url: 'https://behance.net/toby_scott'
         },
         {
-            imgSrc: "./static/img/UIcn.png",
-            text: "UI.CN",
-            url: "https://i.ui.cn/ucenter/107535.html"
+            imgSrc: './static/UIcn.png',
+            text: 'UI.CN',
+            url: 'https://i.ui.cn/ucenter/107535.html'
         },
         {
-            imgSrc: "./static/img/zcool.png",
-            text: "ZCOOL",
-            url: "https://www.zcool.com.cn/u/1252493"
+            imgSrc: './static/zcool.png',
+            text: 'ZCOOL',
+            url: 'https://www.zcool.com.cn/u/1252493'
         }
     ],
-    pClass: ""
+    pClass: ''
 };
 export default {
     data() {
@@ -45,13 +45,13 @@ export default {
     methods: {
         overBg(item) {
             this.$nextTick(function() {
-                let newSrc = item.imgSrc.replace(".png", "2.png");
+                let newSrc = item.imgSrc.replace('.png', '2.png');
                 item.imgSrc = newSrc;
             });
         },
         outBg(item) {
             this.$nextTick(function() {
-                let newSrc = item.imgSrc.replace("2.png", ".png");
+                let newSrc = item.imgSrc.replace('2.png', '.png');
                 item.imgSrc = newSrc;
             });
         },
@@ -61,7 +61,7 @@ export default {
     },
     watch: {
         textState() {
-            this.pClass = "img-div-p";
+            this.pClass = 'img-div-p';
         }
     }
 };

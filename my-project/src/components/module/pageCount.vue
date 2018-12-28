@@ -1,6 +1,6 @@
 <template>
     <div class="page-count">
-        <span>{{ this.page }}</span>
+        <span>{{ page }}</span>
         <span class="line"></span>
         <span>04</span>
     </div>
@@ -10,11 +10,15 @@
 <script>
     export default {
         data() {
-            return {
-            };
+            return {};
         },
 
-        props: ['page']
+        props: {
+            page: {
+                type: String,
+                default: '1'
+            },
+        }
     };
 
 </script>
@@ -33,14 +37,21 @@
         font-weight: normal;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        padding: 0 10px;
+
         .line {
             width: 50px;
             height: 2px;
             background: #fff;
             margin: 5px 0;
             border-radius: 15px;
+        }
+
+        span {
+            display: inline-block;
+            width: 50px;
+            text-align: center;
         }
     }
 

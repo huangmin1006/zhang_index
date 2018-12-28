@@ -16,7 +16,7 @@ export default {
     props: ['number'],
     mounted() {
         var canvas = this.$refs.canvas;
-        var ctx = canvas.getContext("2d");
+        var ctx = canvas.getContext('2d');
         let width = canvas.width;
         let height = canvas.height;
         let clockR = width / 3;
@@ -27,7 +27,7 @@ export default {
         // 画扇形倒计时
         ctx.save();
         function drawArc(s, e) {
-            ctx.fillStyle = "rgba(0,0,0,.3)";
+            ctx.fillStyle = 'rgba(0,0,0,.3)';
             ctx.beginPath();
             ctx.arc(0, 0, clockR, s, e, false);
             ctx.lineTo(0, 0);
@@ -57,7 +57,7 @@ export default {
 
 <style lang="scss" scoped>
 canvas {
-    background: url("../../assets/img/canvasBg.png") no-repeat center;
+    background: url("../../../static/canvasBg.png") no-repeat center;
     background-size: 68% 68%;
     transition: all 0.5 linear;
 }

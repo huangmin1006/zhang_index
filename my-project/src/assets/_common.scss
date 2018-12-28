@@ -1,0 +1,52 @@
+%before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin fontToEmpty($height) {
+    font-size: $height;
+    height: $height;
+    line-height: $height;
+}
+
+.color999{
+    color: #999999;
+}
+
+.colorfff{
+    color: #ffffff;
+}
+
+.fontblod{
+    font-weight: 700;
+}
+
+.font12{
+    font-size: 12px;
+}
+
+
+.font24{
+    font-size: 24px;
+}
+
+.font30{
+    font-size: 30px;
+}
+
+.marginb10{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.margint10{
+    display: block;
+    margin-top: 10px;
+}
