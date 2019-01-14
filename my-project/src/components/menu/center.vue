@@ -7,7 +7,7 @@
                 <title>1</title>
                 <desc>Created with Sketch.</desc>
                 <defs></defs>
-                <g id="英文" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="菜单" transform="translate(-144.000000, -334.000000)" fill="#FFFFFF">
                         <g id="内容" transform="translate(144.000000, 334.000000)">
                             <g id="Group">
@@ -30,7 +30,7 @@
                 <title>2</title>
                 <desc>Created with Sketch.</desc>
                 <defs></defs>
-                <g id="英文" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="菜单" transform="translate(-444.000000, -334.000000)" fill="#FFFFFF">
                         <g id="内容" transform="translate(144.000000, 334.000000)">
                             <g id="Group-Copy" transform="translate(300.000000, 0.000000)">
@@ -53,7 +53,7 @@
                 <title>3</title>
                 <desc>Created with Sketch.</desc>
                 <defs></defs>
-                <g id="英文" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="菜单" transform="translate(-744, -334)" fill="#FFFFFF">
                         <g id="内容" transform="translate(144, 334)">
                             <g id="Group-Copy-2" transform="translate(600, 0)">
@@ -76,7 +76,7 @@
                 <title>4</title>
                 <desc>Created with Sketch.</desc>
                 <defs></defs>
-                <g id="英文" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="菜单" transform="translate(-1044.000000, -334.000000)" fill="#FFFFFF">
                         <g id="内容" transform="translate(144.000000, 334.000000)">
                             <g id="Group-Copy-3" transform="translate(900.000000, 0.000000)">
@@ -98,12 +98,12 @@
 
 <script>
 export default {
-    props: ["languge"],
+    props: ['languge'],
     created() {
-        if (this.languge === "en") {
-            this.$i18n.locale = "en";
+        if (this.languge === 'en') {
+            this.$i18n.locale = 'en';
         } else {
-            this.$i18n.locale = "ch";
+            this.$i18n.locale = 'ch';
         }
     },
     methods: {

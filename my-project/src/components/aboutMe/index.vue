@@ -2,7 +2,7 @@
     <div id="aboutMe">
         <Header></Header>
         <name-header></name-header>
-        <Center></Center>
+        <center-example></center-example>
         <page-count page="03"></page-count>
         <Footer></Footer>
         <Mouse></Mouse>
@@ -13,7 +13,7 @@
 <script>
     import Header from '../module/header.vue';
     import nameHeader from '../module/nameHeader.vue';
-    import Center from './center';
+    import centerExample from '../aboutMe/centerExample';
     import Footer from '../module/footer';
     import Mouse from '../module/mouse';
     import pageCount from '../module/pageCount';
@@ -26,10 +26,10 @@
         },
         components: {
             Header,
-            Center,
             Footer,
             pageCount,
             nameHeader,
+            centerExample,
             Mouse
         }
 
@@ -41,7 +41,7 @@
 <style lang="scss" scoped>
     #aboutMe {
         height: 100%;
-        background-color: #232323;
+        background-color: #222;
         position: relative;
         color: #fff;
         display: flex;

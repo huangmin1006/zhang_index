@@ -2,13 +2,12 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 import Indev from '@/components/index/index'; // 分页1 首页
+import AboutMe from '@/components/aboutMe/index'; // 分页3 关于我
 import Production from '@/components/production/production'; // 分页2 作品主页
 import Detail1 from '@/components/detail1/detail1'; // 分页2 详情1
 import Detail2 from '@/components/detail2/detail2'; // 分页2 详情2
-import AboutMe from '@/components/aboutMe/aboutMe'; // 分页3 关于我
 import CallMe from '@/components/callMe/callMe'; // 分页4 联系我
 import Menu from '@/components/menu/menu'; // 菜单
-
 import LoginPage from '@/components/loginPage/loginPage'; // 加载页
 
 Vue.use(Router);

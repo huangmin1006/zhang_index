@@ -10,6 +10,40 @@
     justify-content: center;
 }
 
+.fle1{
+    flex: 1;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-aic{
+    display: flex;
+    align-items: center;
+}
+
+.flex-jcc{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
 @mixin fontToEmpty($height) {
     font-size: $height;
     height: $height;

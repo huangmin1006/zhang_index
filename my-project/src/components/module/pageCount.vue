@@ -15,7 +15,6 @@
 
         props: {
             page: {
-                type: String,
                 default: '1'
             },
         }

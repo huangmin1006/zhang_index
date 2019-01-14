@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: "App"
+    name: 'App'
 };
 </script>
 
@@ -21,7 +21,7 @@ body,
 
 <script type="text/javascript">
 export default {
-    name: "App"
+    name: 'App'
 };
 </script>
 

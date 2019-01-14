@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>mdpi/Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="英文" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.200000003">
+        <g id="v" transform="translate(-49.000000, -408.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M99,455 C111.150264,455 121,445.150264 121,433 C121,420.849736 111.150264,411 99,411 C86.8497355,411 77,420.849736 77,433 C77,445.150264 86.8497355,455 99,455 Z M49,508 C49,480.385763 71.3857625,458 99,458 C126.614237,458 149,480.385763 149,508 L146,508 C146,482.042617 124.957383,461 99,461 C73.0426168,461 52,482.042617 52,508 L49,508 Z M99,458 C85.1928813,458 74,446.807119 74,433 C74,419.192881 85.1928813,408 99,408 C112.807119,408 124,419.192881 124,433 C124,446.807119 112.807119,458 99,458 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>
